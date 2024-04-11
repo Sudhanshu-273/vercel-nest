@@ -12,7 +12,19 @@ export const databaseConfig: object = {
             define: {
                   schema: 'freedb_social'
             }
+      },
+      development: {
+            username: 'freedb_sudhanshu',
+            password: 'DVx6VegV#!2Mrxa',
+            database: 'freedb_social',
+            host: 'sql.freedb.tech',
+            port: 3306,
+            dialect: 'mysql',
+            dialectModule: require('mysql2'),
+            define: {
+                  schema: 'freedb_social'
+            }
       }
 }
 
-export const sequelize = new Sequelize(databaseConfig["production"])
+export const sequelize = new Sequelize(databaseConfig["development"])
