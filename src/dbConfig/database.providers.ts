@@ -8,9 +8,10 @@ export const databaseConfig: object = {
         host: 'sql.freedb.tech',
         port: 3306,
         dialect: 'mysql',
-      //   define: {
-      //       schema: 'sql6693337'
-      //   }
+        dialectModule: require('mysql2'),
+        define: {
+            schema: 'freedb_social'
+        }
     },
     development: {
         username: 'root',
