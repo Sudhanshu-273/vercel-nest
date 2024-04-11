@@ -12,17 +12,6 @@ export const databaseConfig: object = {
             define: {
                   schema: 'freedb_social'
             }
-      },
-      development: {
-            username: 'root',
-            password: 'Chaubey@123',
-            database: 'social',
-            host: 'localhost',
-            port: 3306,
-            dialect: 'mysql',
-            define: {
-                  schema: 'social'
-            }
       }
 }
 
