@@ -1,7 +1,7 @@
 import {Injectable} from '@nestjs/common';
 import {Sequelize} from "sequelize-typescript";
 import {CreatePostDto} from "../../dtos/CreatePost.dto";
-import * as moment from 'moment';
+import moment from 'moment';
 import {AddCommentDto} from "../../dtos/AddComment.dto";
 
 interface _create_post {

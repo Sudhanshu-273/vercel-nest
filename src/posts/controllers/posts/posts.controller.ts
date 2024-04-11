@@ -1,7 +1,6 @@
 import {Body, Controller, Get, Post, Req, UseGuards} from '@nestjs/common';
 import {AuthGuard} from "../../../auth/auth.guard";
 import {PostsService} from "../../services/posts/posts.service";
-import * as moment from 'moment';
 import {CreatePostDto} from "../../dtos/CreatePost.dto";
 import {Request} from "express";
 import {AddCommentDto} from "../../dtos/AddComment.dto";
